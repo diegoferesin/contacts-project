@@ -1,0 +1,19 @@
+{
+  "name": "contacts-project",
+  "version": "1.0.0",
+  "description": "Contacts Project - Class CSE341 - BYU-I",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoferesin/contacts-project.git"
+  },
+  "author": "Diego Feresin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoferesin/contacts-project/issues"
+  },
+  "homepage": "https://github.com/diegoferesin/contacts-project#readme"
+}
