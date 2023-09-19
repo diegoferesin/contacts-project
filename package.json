@@ -13,6 +13,9 @@
   },
   "author": "Diego Feresin",
   "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  },
   "bugs": {
     "url": "https://github.com/diegoferesin/contacts-project/issues"
   },
