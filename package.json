@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/diegoferesin/contacts-project/issues"
   },
-  "homepage": "https://github.com/diegoferesin/contacts-project#readme"
+  "homepage": "https://github.com/diegoferesin/contacts-project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
