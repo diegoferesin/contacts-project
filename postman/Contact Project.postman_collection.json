@@ -6,17 +6,49 @@
 	},
 	"item": [
 		{
-			"name": "00 - Ping",
+			"name": "00 - Home - Hello World Message 😁",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/users",
-					"protocol": "http",
+					"raw": "{{basePath}}/",
 					"host": [
-						"localhost"
+						"{{basePath}}"
 					],
-					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "01 - Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}/ping",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 - GET - All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}/users",
+					"host": [
+						"{{basePath}}"
+					],
 					"path": [
 						"users"
 					]
@@ -25,43 +57,28 @@
 			"response": []
 		},
 		{
-			"name": "01 - GET - All Users",
+			"name": "03 - GET - By ID",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/users",
-					"protocol": "http",
+					"raw": "{{basePath}}/users/650a57d92c19970dd89b4902",
 					"host": [
-						"localhost"
+						"{{basePath}}"
 					],
-					"port": "3000",
-					"path": [
-						"users"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "01 - GET - By ID",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/users/65066e402c19970dd89b4518",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
 					"path": [
 						"users",
-						"65066e402c19970dd89b4518"
+						"650a57d92c19970dd89b4902"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "local-url",
+			"value": "http://localhost:3000"
 		}
 	]
 }
