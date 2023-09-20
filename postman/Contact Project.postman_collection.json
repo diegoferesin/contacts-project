@@ -73,6 +73,77 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "04 - POST - Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Test 2\",\n  \"lastName\": \"Test 2\",\n  \"email\": \"test@test.com 2\",\n  \"favoriteColor\": \"Test 2\",\n  \"birthdate\": \"9/9/2002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{basePath}}/users",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05 - PUT - Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Test 2\",\n  \"lastName\": \"Test 3\",\n  \"email\": \"test@test.com 4\",\n  \"favoriteColor\": \"Test\",\n  \"birthdate\": \"9/9/2002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{basePath}}/users/",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06 - DELETE - Remove By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}/users/650b4f32ffb783bf0a6814ba",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"users",
+						"650b4f32ffb783bf0a6814ba"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
